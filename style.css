@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #D7FDF0;
+    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;*/
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+h1 {
+    margin: 0;
+}
+#heading {
+    text-align: center;
+    background-color: #AA78A6;
+    color: #F2F5DE;
+    text-shadow: black 1px 1px;
+    box-shadow: black 0px 5px;
+}
+
+#adder{
+    border: none;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 2.5vh;
+    right: 2.5vw;
+    width: 5vh;
+    height: 5vh;
+    background: #B2FFD6;
+    box-shadow: black 0px .25vh;
+}
+
+#bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#newBook {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+#innerModal {
+    border-radius: 5px;
+    text-align: center;
+    background-color: #AA78A6;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    font-size: larger;
+    border: #B8BAC8 solid 3px;
+    color: #D7FDF0;
+  }
+#inputBlock {
+    display: block;
+    margin: 7rem;
+}
+#inputBlock input {
+    border-radius: 25%;
+}
+.book {
+    color: #F2F5DE;
+    text-align: center;
+    background-color: #93FF96;
+    width: 20%;
+    min-height: 20vw;
+    margin: 3 6.5vw;
+    box-sizing: border-box;
+    border: black solid 1px;
+}
+
+.book h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1vw;
+    text-shadow: black 1px 1px;
+}
+
+.book hr {
+    width: 45%;
+    color: transparent;
+    border: black 1px solid;
+}
+
+.book h4 {
+    font-size: 2rem;
+    text-shadow: black 1px 1px;
+}
+
+.book h5 {
+    font-size: 1.5rem;
+    text-shadow: black 1px 1px;
+}
+
+.book button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    border: none;
+    height: 1.5vw;
+    width: 1.5vw;
+}
